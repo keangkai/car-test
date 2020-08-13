@@ -10,9 +10,6 @@ function App() {
 	const [isLoaded, setIsLoaded] = useState(false)
 	const [items, setItems] = useState([])
 
-	// Note: the empty deps array [] means
-	// this useEffect will run once
-	// similar to componentDidMount()
 	useEffect(() => {
 		axios({
 			url: "https://api.jsonbin.io/b/5f33f98ddddf413f95c2b306",
